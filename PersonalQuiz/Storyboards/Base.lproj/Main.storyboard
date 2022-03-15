@@ -233,7 +233,7 @@
                             <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="LIS-ER-0eg">
                                 <rect key="frame" x="0.0" y="91" width="320" height="4"/>
                             </progressView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8ce-o9-hcl">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8ce-o9-hcl">
                                 <rect key="frame" x="15" y="103" width="289" height="24"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <nil key="textColor"/>
@@ -263,13 +263,7 @@
                             <constraint firstItem="tek-wB-R62" firstAttribute="centerY" secondItem="fEs-rE-tgn" secondAttribute="centerY" id="w50-gb-t1c"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Вопрос №" id="uNI-VG-rgT">
-                        <barButtonItem key="rightBarButtonItem" title="Item" id="TzG-fh-V1Q">
-                            <connections>
-                                <segue destination="yty-bz-jRG" kind="show" id="RH7-aI-mqW"/>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" title="Вопрос №" id="uNI-VG-rgT"/>
                     <connections>
                         <outlet property="multipleStackView" destination="tek-wB-R62" id="5Jk-M0-Pwg"/>
                         <outlet property="questionLabel" destination="8ce-o9-hcl" id="e2K-kD-Ukr"/>
@@ -339,6 +333,10 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="animalLabel" destination="qKU-5H-sDw" id="XSd-Op-Uq0"/>
+                        <outlet property="definitionLabel" destination="oey-xn-zq6" id="pBn-f9-MIu"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XcB-wJ-RCm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="oJv-1K-5AK" userLabel="Exit" sceneMemberID="exit"/>
@@ -364,9 +362,6 @@
             <point key="canvasLocation" x="851.25" y="111.97183098591549"/>
         </scene>
     </scenes>
-    <inferredMetricsTieBreakers>
-        <segue reference="ksp-G6-G30"/>
-    </inferredMetricsTieBreakers>
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
